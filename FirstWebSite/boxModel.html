@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box model</title>
+    <style>
+        .card{
+            width:100px;
+            position: relative;
+            border: 1px solid #808080;
+            margin: 0px auto;
+            overflow: hidden;
+        }
+        .dog-img > img{
+            width: 100%;
+        }
+        .desc{
+            font: 8px tahoma;
+            padding: 5px;
+            background-color: rgba(0,0,0,.5);
+            color: #ffffff;
+            position: absolute;
+            bottom: 0px;
+            width: 100%;
+            visibility: hidden;
+        }
+        .card:hover .desc{
+            visibility: visible;
+        }
+
+        .f{background-color: #ffffff;}
+        .e{background-color: #eeeeee;}
+        .d{background-color: #dddddd;}
+        .c{background-color: #cccccc;}
+        .b{background-color: #bbbbbb;}
+        .a{background-color: #aaaaaa;}
+        .six{background-color: #666666;}
+        .five{background-color: #555555;}
+        .four{background-color: #444444;}
+        .three{background-color: #333333;}
+        .two{background-color: #222222;}
+        .one{background-color: #111111;}
+        .zero{background-color: #000000;}
+
+        .f,.e,.d,.c,.b,.a,.six,.five,.four,.three,.two,.one,.zero{
+            padding: 5px;
+            width: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="desc">
+            A beautiful white dog
+        </div>
+        <div class="dog-img">
+            <img src="dog.jpeg" />
+        </div>
+        
+    </div>
+
+
+    <h2>Color bars</h2>
+    <div class="f">#ffffff</div>
+    <div class="e">#eeeeee</div>
+    <div class="d">#dddddd</div>
+    <div class="c">#cccccc</div>
+    <div class="b">#bbbbbb</div>
+    <div class="a">#aaaaaa</div>
+    <div class="six">#666666</div>
+    <div class="five">#555555</div>
+    <div class="four">#444444</div>
+    <div class="three">#333333</div>
+    <div class="two">#222222</div>
+    <div class="one">#111111</div>
+    <div class="zero">#000000</div>
+</body>
+</html>
